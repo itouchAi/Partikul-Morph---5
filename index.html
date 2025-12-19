@@ -33,13 +33,7 @@
 </head>
   <body>
     <div id="root"></div>
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('./sw.js').catch(err => console.log('SW error:', err));
-        });
-      }
-    </script>
+    
   <script src="https://unpkg.com/three@0.166.1/build/three.min.js"></script>
 <script>
   const scene = new THREE.Scene();
@@ -69,13 +63,7 @@
   animate();
 </script>
 
-<script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('./sw.js')
-    });
-  }
-</script>
+
 
   </body>
 </html>
