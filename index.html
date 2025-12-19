@@ -40,28 +40,7 @@
         });
       }
     </script>
-    <script type="module">
-  import React from "react";
-  import { createRoot } from "react-dom/client";
-  import { Canvas } from "@react-three/fiber";
-
-  function App() {
-    return React.createElement(
-      Canvas,
-      { camera: { position: [0, 0, 5] } },
-      React.createElement("ambientLight", { intensity: 0.8 }),
-      React.createElement(
-        "mesh",
-        null,
-        React.createElement("boxGeometry"),
-        React.createElement("meshStandardMaterial", { color: "white" })
-      )
-    );
-  }
-
-  const root = createRoot(document.getElementById("root"));
-  root.render(React.createElement(App));
-</script>
+  
 
   </body>
 </html>
